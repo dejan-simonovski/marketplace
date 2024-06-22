@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dejan\\Desktop\\devops\\Marketplace\\Marketplace\\Marketplace.csproj": {}
+    "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\Marketplace.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dejan\\Desktop\\devops\\Marketplace\\Marketplace\\Marketplace.csproj": {
+    "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\Marketplace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dejan\\Desktop\\devops\\Marketplace\\Marketplace\\Marketplace.csproj",
+        "projectUniqueName": "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\Marketplace.csproj",
         "projectName": "Marketplace",
-        "projectPath": "C:\\Users\\Dejan\\Desktop\\devops\\Marketplace\\Marketplace\\Marketplace.csproj",
+        "projectPath": "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\Marketplace.csproj",
         "packagesPath": "C:\\Users\\Dejan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dejan\\Desktop\\devops\\Marketplace\\Marketplace\\obj\\",
+        "outputPath": "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -78,9 +78,17 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
-            "X.PagedList": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.1.2, )"
+              "version": "[8.0.4, )"
+            },
+            "PagedList.Core": {
+              "target": "Package",
+              "version": "[1.17.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
             },
             "X.PagedList.Mvc.Core": {
               "target": "Package",

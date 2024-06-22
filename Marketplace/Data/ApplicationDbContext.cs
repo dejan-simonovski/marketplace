@@ -1,6 +1,7 @@
 ﻿using Marketplace.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Net.Sockets;
 
 namespace Marketplace.Data
 {
@@ -11,6 +12,15 @@ namespace Marketplace.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseNpgsql("Host=marketplace-db;Port=5432;Database=marketplace-db;Username=postgres;Password=FINKI@2024;Include Error Detail=true");
+            }
+
         }
     }
 }

@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  marketplace:
+    image: ${DOCKER_REGISTRY-}marketplace
+    build:
+      context: .
+      dockerfile: Marketplace/Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"

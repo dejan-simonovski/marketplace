@@ -9,6 +9,7 @@ using Marketplace.Data;
 using Marketplace.Models;
 using System.Security.Claims;
 using X.PagedList;
+using Microsoft.Extensions.Hosting;
 namespace Marketplace.Controllers
 {
     public class PostsController : Controller
@@ -70,6 +71,8 @@ namespace Marketplace.Controllers
         // GET: Posts/Create
         public IActionResult Create()
         {
+            if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value == null)
+                return RedirectToAction(nameof(Index));
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
             return View();
         }
@@ -104,20 +107,16 @@ namespace Marketplace.Controllers
                 return NotFound();
             }
 
-            // Get the current user's ID
-            var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-            // Check if the current user is the owner of the post
-            if (post.UserId != currentUserId)
-            {
-                return Unauthorized(); // Or redirect to an error page
-            }
+            if (post.UserId != User.FindFirst(ClaimTypes.NameIdentifier)?.Value)
+                return RedirectToAction(nameof(Index));
 
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", post.UserId);
             return View(post);
         }
 
         // POST: Posts/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("PostId,Title,Description,YearOfProduction,Location,Price,ImagePath,UserId")] Post post)
@@ -125,15 +124,6 @@ namespace Marketplace.Controllers
             if (id != post.PostId)
             {
                 return NotFound();
-            }
-
-            // Get the current user's ID
-            var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-            // Check if the current user is the owner of the post
-            if (post.UserId != currentUserId)
-            {
-                return Unauthorized(); // Or redirect to an error page
             }
 
             if (ModelState.IsValid)
