@@ -39,8 +39,8 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v5
         with:
-          context: ..
-          dockerfile: ../Marketplace/Dockerfile  # Path to Dockerfile relative to the root
+          context: ../..  # Set context to the repository root
+          dockerfile: ../../Marketplace/Dockerfile  # Specify the relative path to the Dockerfile
           push: true
           tags: dejans12/marketplaceapp:latest
 
