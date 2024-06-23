@@ -40,7 +40,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ..
-          dockerfile: Marketplace/Dockerfile  # Path to Dockerfile relative to the root
+          dockerfile: ../Marketplace/Dockerfile  # Path to Dockerfile relative to the root
           push: true
           tags: dejans12/marketplaceapp:latest
 
