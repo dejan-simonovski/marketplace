@@ -25,22 +25,12 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
-      # Add a debugging step to list files in the repository root
-      - name: List files for debugging
-        run: |
-          echo "Current Directory:"
-          pwd
-          echo "Files in Root Directory:"
-          ls -l
-          echo "Files in Marketplace Directory:"
-          ls -l Marketplace
-
       # Build and push Docker image
       - name: Build and push image
         uses: docker/build-push-action@v5
         with:
-          context: ../..  # Set context to the repository root
-          dockerfile: ../../Marketplace/Dockerfile  # Specify the relative path to the Dockerfile
+          context: .
+          dockerfile: Marketplace/Dockerfile
           push: true
           tags: dejans12/marketplaceapp:latest
 
