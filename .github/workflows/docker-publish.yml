@@ -29,6 +29,8 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v5
         with:
+	  context: ./Marketplace
+          file: ./Marketplace/Dockerfile
           push: true
           tags: dejans12/marketplaceapp:latest
 
