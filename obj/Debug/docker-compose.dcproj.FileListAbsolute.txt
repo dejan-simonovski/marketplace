@@ -1,3 +1,4 @@
+C:\Users\Dejan\Desktop\Marketplace\Marketplace\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Dejan\Desktop\Marketplace\Marketplace\bin\Debug\Marketplace.deps.json
 C:\Users\Dejan\Desktop\Marketplace\Marketplace\bin\Debug\Marketplace.runtimeconfig.json
 C:\Users\Dejan\Desktop\Marketplace\Marketplace\bin\Debug\appsettings.Development.json
@@ -27,5 +28,4 @@ C:\Users\Dejan\Desktop\Marketplace\Marketplace\bin\Debug\Npgsql.dll
 C:\Users\Dejan\Desktop\Marketplace\Marketplace\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Dejan\Desktop\Marketplace\Marketplace\bin\Debug\Marketplace.pdb
 C:\Users\Dejan\Desktop\Marketplace\Marketplace\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
-C:\Users\Dejan\Desktop\Marketplace\Marketplace\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Dejan\Desktop\Marketplace\Marketplace\obj\Debug\docker-c.35A3FFBA.Up2Date
