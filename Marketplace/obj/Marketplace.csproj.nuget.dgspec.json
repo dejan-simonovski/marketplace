@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\Marketplace.csproj": {}
+    "C:\\Users\\Dejan\\Documents\\GitHub\\marketplace\\Marketplace\\Marketplace.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\Marketplace.csproj": {
+    "C:\\Users\\Dejan\\Documents\\GitHub\\marketplace\\Marketplace\\Marketplace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\Marketplace.csproj",
+        "projectUniqueName": "C:\\Users\\Dejan\\Documents\\GitHub\\marketplace\\Marketplace\\Marketplace.csproj",
         "projectName": "Marketplace",
-        "projectPath": "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\Marketplace.csproj",
+        "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\marketplace\\Marketplace\\Marketplace.csproj",
         "packagesPath": "C:\\Users\\Dejan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\obj\\",
+        "outputPath": "C:\\Users\\Dejan\\Documents\\GitHub\\marketplace\\Marketplace\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",

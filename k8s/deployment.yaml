@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: marketplace-app
+  namespace: marketplace-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: marketplace
+  template:
+    metadata:
+      labels:
+        app: marketplace
+    spec:
+      containers:
+      - name: marketplace
+        image: dejans12/marketplaceapp
+        ports:
+        - containerPort: 5000
+        - containerPort: 5001
+        envFrom:
+        - configMapRef:
+            name: marketplace-config
+        volumeMounts:
+        - name: user-secrets
+          mountPath: /home/app/.microsoft/usersecrets
+          readOnly: true
+        - name: https-certs
+          mountPath: /home/app/.aspnet/https
+          readOnly: true
+      volumes:
+      - name: user-secrets
+        hostPath:
+          path: /etc/k8s/marketplace/usersecrets
+      - name: https-certs
+        hostPath:
+          path: /etc/k8s/marketplace/https

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r7pRSFByyng=",
+  "dgSpecHash": "L0K1KG20Up4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dejan\\Desktop\\Marketplace\\Marketplace\\Marketplace\\Marketplace.csproj",
+  "projectFilePath": "C:\\Users\\Dejan\\Documents\\GitHub\\marketplace\\Marketplace\\Marketplace.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dejan\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Dejan\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
